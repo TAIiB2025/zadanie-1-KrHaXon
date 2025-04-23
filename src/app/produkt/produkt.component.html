@@ -1,0 +1,18 @@
+<table *ngIf="przelaczWidocznoscProduktow" class="produkt" [ngClass]="{'promocja': produkt.czyPromocja}">
+    <tr>
+      <th>Nazwa</th>
+      <th>Cena</th>
+      <th>Data utworzenia</th>
+      <th>Dodaj do koszyka</th>
+      <th>Liczba sztuk w koszyku</th>
+    </tr>
+    <tr>
+      <td>{{ produkt.nazwa }}</td>
+      <td>{{ produkt.cena | currencyFormat }}</td>
+      <td>{{ produkt.dataUtworzenia | date:'dd.MM.yyyy' }}r.</td>
+      <td>{{ produkt.liczbaSztuk}}</td>
+      <td>
+        <button (click)="dodajDoKoszyka()">Dodaj do koszyka</button>
+      </td>
+    </tr>
+  </table>

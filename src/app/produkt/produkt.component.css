@@ -1,0 +1,14 @@
+table.produkt {
+    border-collapse: collapse;
+    margin-top: 20px;
+    width: 50%;
+  }
+table.produkt th, table.produkt td {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: left;
+  }
+  .promocja {
+    background-color: red;
+    color: white;
+  }
